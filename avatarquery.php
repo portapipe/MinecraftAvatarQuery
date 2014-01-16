@@ -1,8 +1,4 @@
 <?php
-//This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
-//To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/
-//Big thanks to IamPhoenix's wonderful API.
-
 //The following script is tested only with servers running on Minecraft 1.7.
 
 $SERVER_IP="127.0.0.1:25565"; //Insert the IP of the server you want to query. Query must be enabled in your server.properties file!
