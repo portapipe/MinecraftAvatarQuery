@@ -11,3 +11,6 @@ How to use:
 3) Upload the file to your webserver.<br>
 4) Done!
 
+Screenshot
+===========
+<a><img src="http://i.imgur.com/Tcd7fPk.png"/></a>
