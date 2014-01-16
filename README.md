@@ -1,7 +1,7 @@
 MinecraftAvatarQuery
 ====================
-
-Probably the easiest way to query your Minecraft server.
+<a><img src="http://i.imgur.com/I1mdz9Z.png"/></a><br>
+Probably the easiest way to query your Minecraft server with avatars.
 
 How to use:
 ===========
@@ -10,7 +10,3 @@ How to use:
 2) Edit the $SERVER_IP variable to match your desired IP.<br>
 3) Upload the file to your webserver.<br>
 4) Done!
-
-Screenshot
-===========
-<a><img src="http://i.imgur.com/Tcd7fPk.png"/></a>
