@@ -7,8 +7,8 @@ $SERVER_IP="127.0.0.1:25565"; //Insert the IP of the server you want to query. Q
 //Note: port is not neccesary when running the server on default port, otherwise use it!
 
 //Query the data from the server using IamPhoenix's API
-$data_list = json_decode(file_get_contents("http://api.iamphoenix.me/list/?server_ip=".$SERVER_IP."&clean=true"), true);
-$data_general = json_decode(file_get_contents("http://api.iamphoenix.me/get/?server_ip=".$SERVER_IP."&clean=true"), true);
+$data_list = json_decode(file_get_contents("http://api.iamphoenix.me/list/?server_ip=".$SERVER_IP.""), true);
+$data_general = json_decode(file_get_contents("http://api.iamphoenix.me/get/?server_ip=".$SERVER_IP.""), true);
 
 //Put the collected player information into an array for later use.
 $array_list = explode(',', $data_list['players']);
