@@ -3,7 +3,15 @@ MinecraftAvatarQuery
 <a><img src="http://i.imgur.com/I1mdz9Z.png"/></a><br>
 Probably the easiest way to query your Minecraft server with avatars.
 
-How to use
+Features
+===========
+<ul>
+<li>Twitter-Bootstrap HTML framework</li>
+<li>Minecraft skin avatars</li>
+<li>Minecraft 1.7 support</li>
+</ul>
+
+How to Use
 ===========
 
 1) Download avatarquery.php file.<br>
