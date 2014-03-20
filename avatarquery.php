@@ -1,14 +1,14 @@
 <?php
 //The following script is tested only with servers running on Minecraft 1.7.
 
-$SERVER_IP="127.0.0.1:25565"; //Insert the IP of the server you want to query. Query must be enabled in your server.properties file!
+$SERVER_IP="127.0.0.1"; //Insert the IP of the server you want to query. Query must be enabled in your server.properties file!
 
 //You can either insert the DNS (eg. play.hivemc.com) OR the IP itself (eg. 187.23.123.21). 
 //Note: port is not neccesary when running the server on default port, otherwise use it!
 
-//Query the data from the server using IamPhoenix's API
+//Query the data from the server using Minecraft API (also known as IamPhoenix's API)
 $data_list = json_decode(file_get_contents("http://api.iamphoenix.me/list/?server_ip=".$SERVER_IP.""), true);
-$data_general = json_decode(file_get_contents("http://api.iamphoenix.me/get/?server_ip=".$SERVER_IP.""), true);
+$data_general = json_decode(file_get_contents("http://minecraft-api.com/v1/get/?server=".$SERVER_IP.""), true);
 
 //Put the collected player information into an array for later use.
 $array_list = explode(',', $data_list['players']);
@@ -53,7 +53,7 @@ $array_list = explode(',', $data_list['players']);
 					</tr>
 					<tr>
 					<td><b>Players</b></td>
-					<td><?php echo "".$data_general['players']." / ".$data_general['players_max']."";?></td>
+					<td><?php echo "".$data_general['players']['online']." / ".$data_general['players']['max']."";?></td>
 					</tr>
 					<tr>
 					<td><b>Status</b></td>
