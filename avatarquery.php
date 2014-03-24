@@ -73,7 +73,7 @@ $array_list = explode(',', $data_list['players']);
 				foreach($array_list as $key => $value){$users .= "<a data-placement=\"top\" rel=\"tooltip\" style=\"display: inline-block;\" title=\"".$value."\">
 				<img src=\"https://minotar.net/avatar/".$value."/50\" size=\"40\" width=\"40\" height=\"40\" style=\"width: 40px; height: 40px; margin-bottom: 5px; margin-left: 5px; border-radius: 3px;\"/></a>";}
 				//Display the avatars only when there are players online.
-				if($data_general['players'] > 0) {
+				if($data_general['players']['online'] > 0) {
 					print_r($users);
 					}
 				//If no avatars can be shown, display an error.
