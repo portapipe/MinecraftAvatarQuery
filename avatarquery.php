@@ -23,11 +23,11 @@ $array_list = explode(',', $data_list['players']);
     	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     	<script type="text/javascript" src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    	<script>
-    	jQuery(function ($) {
-        	$("a").tooltip()
-    	}); 
-    	</script>
+    	<script language="javascript">
+   		jQuery(document).ready(function(){
+			$("[rel='tooltip']").tooltip();
+    	});
+		</script>
     	<style>
     	/*Custom CSS Overrides*/
     	body {
@@ -71,7 +71,7 @@ $array_list = explode(',', $data_list['players']);
 				<?php
 				//Take the username values from the array & grab the avatars from Minotar.				
 				foreach($array_list as $key => $value){$users .= "<a data-placement=\"top\" rel=\"tooltip\" style=\"display: inline-block;\" title=\"".$value."\">
-				<img src=\"https://minotar.net/avatar/".$value."/50\" size=\"40\" width=\"40\" height=\"40\" style=\"width: 40px; height: 40px; margin-bottom: 5px; margin-left: 5px; border-radius: 3px;\"/></a>";}
+				<img src=\"https://minotar.net/avatar/".$value."/50\" size=\"40\" width=\"40\" height=\"40\" style=\"width: 40px; height: 40px; margin-bottom: 5px; margin-right: 5px; border-radius: 3px;\"/></a>";}
 				//Display the avatars only when there are players online.
 				if($data_general['players']['online'] > 0) {
 					print_r($users);
